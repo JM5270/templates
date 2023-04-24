@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Template</title>
+        <style>
+          body{
+            margin: 0;
+            height: 100vh;
+            overflow:auto;
+          }
+          .topnav{
+            position: fixed;
+            padding: 10px;
+            overflow: hidden;
+            margin: 0;
+            width: 100%;
+            box-shadow:0 2px 5px 0 ghostwhite, 0 2px 10px 0 rgba(0,0,0,0.12);
+            background-color:antiquewhite;
+          }
+          .titre, .dashes>a{
+            font-family: Serif;
+            font-size: 20px;
+            cursor: pointer;
+            letter-spacing: 0.2em;
+          }
+          .titre{
+            float: left;
+            padding: 15px;
+          }
+          .dashes>a:hover, .titre:hover{
+            background-color:ghostwhite;
+            border-radius: 5px;
+          }
+          .dashes{
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .dashes>a{
+            padding: 15px 16px;
+            text-decoration: none;
+            color: black;
+          }
+          .titreimge{
+            padding: 15px;
+            font-size: 60px;
+            font-family: Serif;
+            letter-spacing: 0.2em;
+            position:absolute;
+            bottom: 0;
+          }
+          .main{
+            margin: 0;
+            background-color:antiquewhite;
+          }
+          .About, .Menu{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 64px!important;
+            padding-bottom: 64px!important;
+          }
+          .img, .mimge{
+            margin: 25px;
+          }
+          .text{
+            margin: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .text>p{
+            font-size: 18px!important;
+            padding: 10px;
+          }
+          .pltes{
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+          }
+          .pltes>div{
+            padding: 10px;
+          }
+          .m>p{
+            color:rgb(150, 148, 148);
+          }
+          input{
+            display: block;
+            border-style: none;
+            margin: 10px;
+            width: 100%;
+            height: 5px;
+            padding: 25px;
+            background-color: antiquewhite;
+            border-bottom: 1px solid ghostwhite;
+          }
+          .miniContct{
+            padding: 10px 15px;
+            margin: 5px 50px;
+          }
+          button:hover{
+            cursor: pointer;
+            background-color: rgb(150, 148, 148);
+          }
+          button{
+            border-style: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            background-color: rgb(187, 186, 186);
+            font-family: 'Times New Roman', Times, serif;
+          }
+          ::-webkit-scrollbar {
+            width: 10px;
+          }
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+          }
+          ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+          }
+          ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+          }
+        </style>
+    </head>
+    <body>
+      <div class="topnav">
+        <div class="titre">Gourmet au Catering</div>
+        <div class="dashes">
+          <a href="#about">About</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="wholepge" style="padding: 0;background-color:antiquewhite;">
+      <div class="imge" style="margin-bottom: -10px;background-color:antiquewhite;">
+      <img src="https://www.w3schools.com/w3images/hamburger.jpg" style="max-width:1349px;min-width:500px">
+      <div class="titreimge">Le Catering</div>
+    </div>
+    <div class="main">
+      <div class="About" id="about">
+        <div class="img">
+          <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" width="600" height="650" style="box-shadow:0 2px 5px 0 ghostwhite, 0 2px 10px 0 rgba(0,0,0,0.12);">
+        </div>
+        <div class="text">
+          <h2 style="font-family: Playfair Display; letter-spacing: 5px; padding: 15px; font-weight: 400; font-size: 36px;">About Catering</h2>
+          <h3 style="font-family: Playfair Display; letter-spacing: 5px; font-weight: 400;font-size: 18px;">Tradition since 1889</h3>
+          <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span style="background-color: ghostwhite;padding: 5px;">seasonal</span>ingredients.</p>
+          <p style="color: rgb(150, 148, 148);">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+      <hr style="border-top: 1px solid ghostwhite;margin: 20px 0;">
+      <div class="Menu" id="menu" style="padding: 10;">
+        <div class="pltes" style="text-align: center!important;">
+        <h2 style="font-family: Playfair Display; letter-spacing: 5px; padding: 15px; font-weight: 400; font-size: 36px;">Our Menu</h2>
+        <div class="m m1">
+          <h3>Bread Basket</h3>
+          <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+        </div>
+        <div class="m m2">
+          <h3>Honey Almond Granola with Fruits</h3>
+          <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+        </div>
+        <div class="m m3">
+          <h3>Belgian Waffle</h3>
+          <p>Vanilla flavored batter with malted flour 7.50</p>
+        </div>
+        <div class="m m4">
+          <h3>Scrambled eggs</h3>
+          <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+        </div>
+        <div class="m m5">
+          <h3>Blueberry Pancakes</h3>
+          <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+      </div>
+      <div class="mimge">
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" style="box-shadow:0 2px 5px 0 ghostwhite, 0 2px 10px 0 rgba(0,0,0,0.12);" height="670" width="550">
+      </div>
+      </div>
+      <hr style="border-top: 1px solid ghostwhite; margin: 20px 40px;">
+    </div>
+    <div class="Contact" id="contact" style="background-color: antiquewhite;margin-top: 0;">
+      <div class="miniContct" style="line-height: 1.5;padding: 10 15;">
+      <h2 style="font-family:Playfair Display;letter-spacing: 5px;font-weight: 400;font-size: 36px;">Contact</h2>
+      <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+      <h5 style="font-size: 17px;color: grey;">Catering Service, 42nd Living St, 43043 New York, NY</h5>
+      <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+      <form class="forms">
+        <div><input type="text" placeholder="Name"></div>
+        <div><input type="number" min="0" max="100" placeholder="How many people"></div>
+        <div><input type="date"></div>
+        <div><input type="text" placeholder="Message\ Special requirements"></div>
+        <button class="btn">SEND MESSAGE</button>
+      </form>
+    </div>
+    </div>
+  </div>
+    </body>
+    </html>
